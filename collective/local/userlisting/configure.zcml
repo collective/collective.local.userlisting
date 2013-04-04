@@ -4,6 +4,7 @@
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="collective.local.userlisting">
 
   <five:registerPackage package="." initialize=".initialize" />
@@ -33,5 +34,11 @@
      class=".userlisting.View"
      permission="zope2.View"
      />
+
+
+  <configure zcml:condition="installed plone.app.dexterity">
+    <include file="dexterity.zcml" />
+  </configure>
+
 
 </configure>
