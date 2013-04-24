@@ -4,6 +4,9 @@ Changelog
 1.2 (unreleased)
 ----------------
 
+- Roles displayed in Members tab are set with a property.
+  [thomasdesvenain]
+
 - Now we have a dexterity behavior.
   [thomasdesvenain]
 

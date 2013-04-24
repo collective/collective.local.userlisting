@@ -13,11 +13,6 @@ class Expressions(BrowserView):
     def userlisting_available(self):
         return IUserListingAvailable.providedBy(self.context)
 
-ROLES = ['Site Administrator',
-         'Reviewer',
-         'Editor',
-         'Contributor',
-         'Reader']
 
 def users_with_local_role(content, portal, role):
     # union with set of ids of members with the local role
@@ -36,7 +31,7 @@ class View(BrowserView):
         site_url = portal.absolute_url()
         infos = []
 
-        for role in ROLES:
+        for role in getToolByName(self.context, 'portal_properties').site_properties.userlisting_roles:
             users = [user for user
                       in users_with_local_role(self.context, portal, role)
                       if user.getProperty('listed')]

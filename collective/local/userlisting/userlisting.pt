@@ -32,7 +32,7 @@
                   <a tal:attributes="href user/home"
                      tal:content="user/fullname" />
                      -
-                  <span tal:content="user/email" />
+                  <a tal:attributes="href string:mailto:${user/email}" tal:content="user/email"></a>
               </li>
             </ul>
           </dd>
@@ -40,7 +40,8 @@
       </dl>
     <script type="text/javascript">
     jq(document).ready(function(){
-        jq('#user-listing a').prepOverlay({subtype: 'ajax'});
+        jq('#user-listing a').prepOverlay({subtype: 'ajax',
+        	filter:common_content_filter});
     })
 
     </script>
