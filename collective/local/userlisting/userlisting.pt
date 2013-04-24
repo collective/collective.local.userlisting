@@ -28,7 +28,7 @@
             <ul>
               <li class="visualNoMarker"
                   tal:repeat="user usersbyrole/users">
-                  <img src="user.gif" />
+                  <img src="user.png" />
                   <a tal:attributes="href user/home"
                      tal:content="user/fullname" />
                      -
