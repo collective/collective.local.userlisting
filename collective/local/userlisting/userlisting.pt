@@ -30,7 +30,8 @@
                   tal:repeat="user usersbyrole/users">
                   <img src="user.png" />
                   <a tal:attributes="href user/home"
-                     tal:content="user/fullname" />
+                     tal:content="user/fullname"
+                     class="overlay" />
                      -
                   <a tal:attributes="href string:mailto:${user/email}" tal:content="user/email"></a>
               </li>
@@ -39,8 +40,8 @@
         </tal:block>
       </dl>
     <script type="text/javascript">
-    jq(document).ready(function(){
-        jq('#user-listing a').prepOverlay({subtype: 'ajax',
+    $(document).ready(function(){
+        $('#user-listing a.overlay').prepOverlay({subtype: 'ajax',
         	filter:common_content_filter});
     })
 

@@ -4,6 +4,9 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Plone 4.3 compatibility (fixes jq not found error).
+  [thomasdesvenain]
+
 - Use png instead of gif file (Plone 4 compatibility).
   [ebrehaut]
 
