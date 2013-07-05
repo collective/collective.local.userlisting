@@ -4,6 +4,10 @@ Changelog
 1.3 (unreleased)
 ----------------
 
+- Improved algorithm
+  so that members list shows users that have roles inherited from upper levels.
+  [thomasdesvenain]
+
 - Plone 4.3 compatibility (fixes jq not found error).
   [thomasdesvenain]
 

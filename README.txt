@@ -13,3 +13,6 @@ Add to the configure.zcml on your policy product::
   <class class="my.package.content.MyContent.MyContent">
      <implements interface="collective.local.userlisting.interfaces.IUserListingAvailable" />
   </class>
+
+You can also check the interface in "Interfaces" tab of content in ZMI.
+In dexterity, you can select the behaviour.
