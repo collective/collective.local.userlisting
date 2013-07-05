@@ -7,6 +7,9 @@ Changelog
 - Plone 4.3 compatibility (fixes jq not found error).
   [thomasdesvenain]
 
+- fix namespace package declaration in setup.py
+  [cewing]
+
 - Use png instead of gif file (Plone 4 compatibility).
   [ebrehaut]
 
